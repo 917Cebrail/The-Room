@@ -5,5 +5,5 @@ K : Ateş Etme <br>
 Işte bu kadar.
 <h2>Version 1 2. Edition</h2>
 <p>2 Bölüm daha eklendi ve toplamda 3 adet bölüm oldu.</p>
-<h2>Version 1 2. Edition</h2>
+<h2>Version 1 3. Edition</h2>
 <p>Iyileştirmeler yapıldı ve yeni ses efektleri eklendi.</p>
