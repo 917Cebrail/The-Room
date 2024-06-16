@@ -1,0 +1,11 @@
+C:\Users\Cebrail\source\repos\THE ROOM\THE ROOM\bin\Debug\THE ROOM.exe.config
+C:\Users\Cebrail\source\repos\THE ROOM\THE ROOM\bin\Debug\THE ROOM.exe
+C:\Users\Cebrail\source\repos\THE ROOM\THE ROOM\bin\Debug\THE ROOM.pdb
+C:\Users\Cebrail\source\repos\THE ROOM\THE ROOM\obj\Debug\THE ROOM.csprojAssemblyReference.cache
+C:\Users\Cebrail\source\repos\THE ROOM\THE ROOM\obj\Debug\THE ROOM.csproj.CoreCompileInputs.cache
+C:\Users\Cebrail\source\repos\THE ROOM\THE ROOM\obj\Debug\THE ROOM.exe
+C:\Users\Cebrail\source\repos\THE ROOM\THE ROOM\obj\Debug\THE ROOM.pdb
+C:\Users\Cebrail\source\repos\THE ROOM\THE ROOM\obj\Debug\Interop.MediaPlayer.dll
+C:\Users\Cebrail\source\repos\THE ROOM\THE ROOM\obj\Debug\Interop.WMPLauncher.dll
+C:\Users\Cebrail\source\repos\THE ROOM\THE ROOM\obj\Debug\Interop.WMPLib.dll
+C:\Users\Cebrail\source\repos\THE ROOM\THE ROOM\obj\Debug\THE ROOM.csproj.ResolveComReference.cache
