@@ -1,0 +1,7 @@
+C:\Users\Cebrail\source\repos\THE ROOM\THE ROOM\bin\Release\THE ROOM.exe.config
+C:\Users\Cebrail\source\repos\THE ROOM\THE ROOM\bin\Release\THE ROOM.exe
+C:\Users\Cebrail\source\repos\THE ROOM\THE ROOM\bin\Release\THE ROOM.pdb
+C:\Users\Cebrail\source\repos\THE ROOM\THE ROOM\obj\Release\THE ROOM.csprojAssemblyReference.cache
+C:\Users\Cebrail\source\repos\THE ROOM\THE ROOM\obj\Release\THE ROOM.csproj.CoreCompileInputs.cache
+C:\Users\Cebrail\source\repos\THE ROOM\THE ROOM\obj\Release\THE ROOM.exe
+C:\Users\Cebrail\source\repos\THE ROOM\THE ROOM\obj\Release\THE ROOM.pdb
