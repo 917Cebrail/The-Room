@@ -1,0 +1,101 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using WMPLib;
+
+namespace THE_ROOM
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            E1M1 e1m1 = new E1M1();
+            Console.Title = "THE ROOM";
+            Console.WindowHeight = 23;
+            Console.BufferHeight = 23;
+            Console.WindowWidth = 50;
+            Console.BufferWidth = 50;
+            Console.WriteLine("\n");
+            Console.BackgroundColor = ConsoleColor.Gray;
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Red;
+            string room = @"
+     ██▀███   ▒█████   ▒█████   ███▄ ▄███▓
+     ▓██ ▒ ██▒▒██▒  ██▒▒██▒  ██▒▓██▒▀█▀ ██▒
+     ▓██ ░▄█ ▒▒██░  ██▒▒██░  ██▒▓██    ▓██░
+     ▒██▀▀█▄  ▒██   ██░▒██   ██░▒██    ▒██ 
+     ░██▓ ▒██▒░ ████▓▒░░ ████▓▒░▒██▒   ░██▒
+     ░ ▒▓ ░▒▓░░ ▒░▒░▒░ ░ ▒░▒░▒░ ░ ▒░   ░  ░
+     ░▒ ░ ▒░  ░ ▒ ▒░   ░ ▒ ▒░ ░  ░      ░
+     ░░   ░ ░ ░ ░ ▒  ░ ░ ░ ▒  ░      ░   
+     ░         ░ ░      ░ ░         ░   
+                                      
+            ";
+            string[] _grid = new string[]
+            {
+                "----------------------------------------",
+                "  ██▀███   ▒█████   ▒█████   ███▄ ▄███▓",
+                " ▓██ ▒ ██▒▒██▒  ██▒▒██▒  ██▒▓██▒▀█▀ ██▒",
+                " ▓██ ░▄█ ▒▒██░  ██▒▒██░  ██▒▓██    ▓██░",
+                " ▒██▀▀█▄  ▒██   ██░▒██   ██░▒██    ▒██ ",
+                " ░██▓ ▒██▒░ ████▓▒░░ ████▓▒░▒██▒   ░██▒",
+                " ░ ▒▓ ░▒▓░░ ▒░▒░▒░ ░ ▒░▒░▒░ ░ ▒░   ░  ░",
+                " ░▒ ░ ▒░  ░ ▒ ▒░   ░ ▒ ▒░ ░  ░      ░",
+                " ░░   ░ ░ ░ ░ ▒  ░ ░ ░ ▒  ░      ░",
+                " ░         ░ ░      ░ ░         ░",
+                "----------------------------------------"
+            };
+            char[,] grid = new char[_grid.Length, _grid[0].Length];
+
+            for (int i = 0; i < _grid.Length; i++)
+            {
+                for (int j = 0; j < _grid[i].Length; j++)
+                {
+                    grid[i, j] = _grid[i][j];
+                }
+            }
+            WindowsMediaPlayer player = new WindowsMediaPlayer();
+            player.URL = @"end.mp3";
+            player.controls.play();
+            for (int y = 0; y < grid.GetLength(0); y++)
+            {
+                for (int x = 0; x < grid.GetLength(1); x++)
+                {
+                    Console.Write(grid[y, x]);
+                    System.Threading.Thread.Sleep(30);
+                }
+                Console.WriteLine();
+            }
+            player.controls.stop();
+            Console.WriteLine(" [1] : Play  [2] : Exit [3] : About\n");
+            while (true)
+            {
+                Console.Write("\n > ");
+                string command = Console.ReadLine();
+                if (command == "1")
+                {
+                    Console.Clear();
+                    e1m1.Episode1();
+                }
+                else if (command == "2")
+                {
+                    break;
+                }
+                else if (command == "3")
+                {
+                    Console.Clear();
+                    Console.WriteLine(room);
+                    Console.WriteLine(" [W,A,S,D] : Move \n [O] : Player \n [0] : Dead Enemy \n [X] : Enemy");
+                    Console.WriteLine(" [Creator] : Cebrail Kutlar\n");
+                    Console.WriteLine(" [1] : Play  [2] : Exit [3] : About");
+                }
+                else
+                {
+                    Console.WriteLine(" Wrong Command");
+                }
+            }
+        }
+    }
+}
